@@ -1,0 +1,747 @@
+@font-face {
+    font-family: Segoe WP;
+    src: url(fonts/Segoe_WP.ttf);
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.header {
+    background: url(img/background.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 43.6vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.player {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    height: fit-content;
+    width: 38.5%;
+    margin-left: 10.8%;
+}
+
+.logo-image {
+    margin-top: 5.8%;
+    width: 85px;
+    height: fit-content;
+}
+
+.logo-image>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo-title {
+    font-size: 2.5rem;
+    font-family: "Lucida Sans";
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 0.8;
+    text-align: center;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+    margin-left: 1.8%;
+    margin-top: 12%;
+    height: fit-content;
+}
+
+.logo-subtitle {
+    font-size: 0.8rem;
+    font-family: "Lao UI";
+    color: rgba(255, 255, 255, 0.769);
+    text-transform: uppercase;
+    line-height: 0.8;
+    text-align: center;
+    margin-top: 16.4%;
+    height: fit-content;
+}
+
+nav {
+    display: flex;
+    position: relative;
+    margin-left: 6.2%;
+    margin-top: 5.47%;
+    z-index: 0;
+    height: 41px;
+    width: 34.9%
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding-inline-start: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Segoe WP";
+    color: rgb(155, 125, 8);
+    background-color: #f5c506;
+    text-transform: uppercase;
+    line-height: 0.9;
+    text-align: center;
+    text-decoration: none;
+    border-right: 1px solid #b99403;
+}
+
+nav img {
+    height: 44%;
+}
+
+nav a>div {
+    padding-left: 6%;
+}
+
+nav,
+nav::before,
+nav::after {
+    box-shadow: 2px 1px 1px rgba(0,0,0,0.15);
+    background-color: #f5c506;
+}
+
+nav::before,
+nav::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 41px;
+}
+
+nav::before {
+    left: -3px;
+    top: -3px;
+    z-index: -1;
+    opacity: 35%;
+}
+
+nav::after {
+    left: -6px;
+    top: -6px;
+    z-index: -2;
+    opacity: 15%;
+}
+
+.top-nav__button--about-us {
+    width: 38%;
+}
+
+.top-nav__button--services {
+    width: 29.2%;
+}
+
+.top-nav__button--contact{
+    width: 32.8%;
+    border-right: none;
+}
+
+.top-nav__button div{
+    margin-left: 7%;
+}
+
+nav img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.slogan {
+    position: absolute;
+    top: 61.8%;
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    font-family: "Asap";
+    line-height: 1.2;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 57.7%;
+    align-items: center;
+}
+
+.slogan-text__yellow {
+    color: rgb(245, 197, 6);
+}
+
+
+.advantages {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    background-color: #f6f6f6;
+    height: 16.3vw;
+    width: 100%;
+    box-shadow: 0 0 19px rgba(0,0,0,2);
+}
+
+.advantage {
+    text-align: center;
+    margin-bottom: 3.07%;
+    width: 33%;
+}
+
+.advantage-shape {
+    color:#f5c506;
+    opacity: 100%;
+}
+
+.advantage-description {
+    font-size: 1.7rem;
+    font-family: "Segoe UI";
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}  
+
+.stories {
+    background: url(img/background-checkerboard.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 121%;
+}
+
+.stories-header {
+    font-size: 2.3rem;
+    font-family: "PT Sans";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.8;
+    text-align: left;
+    padding-left: 10.7%;
+    padding-top: 3.1%;
+}
+
+.stories-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-left: 10.7%;
+    height: 45.5%
+}
+
+#story2 {
+    display: flex;
+    justify-content: center;
+    width: 24.2vw;
+    height: 100%;
+    overflow: hidden;
+    margin-right: 2.75vw;
+    position: relative;
+}
+
+.story {
+    width: 29.3%;
+    height: 100%;
+    background-color: #ec9e03;
+    position: relative;
+    margin-top: 3.7%;
+    min-width: 300px;
+    max-height: 240px;
+}
+
+.story-body {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-size: 1.7rem;
+    font-family: "Segoe WP";
+    color: rgb(255, 255, 255);
+    line-height: 1.308;
+    text-align: left;
+    text-indent: none;
+    word-wrap: break-word;
+}
+
+.story-body>span {
+    padding: 5% 9% 0;
+}
+
+.story-body>img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.story-footer {
+    width: 100%;
+}
+
+.story-number {
+    position: absolute;
+    font-size: 1.55rem;
+    font-family: "Segoe WP";
+    color: rgb(255, 255, 255);
+    line-height: 0.8;
+    right: 0;
+    padding-top: 6.3%;
+    padding-right: 6.3%;
+}
+ 
+
+.story-footer>svg {
+    padding-right: 3.8%;
+    padding-bottom: 3.8%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.features {
+    background: url(img/background-2.png);
+    background-size: cover;
+    width: 100%;
+    height: 102%;
+}
+
+.features-header {
+    font-size: 2.7rem;
+    font-family: "PT Sans";
+    color: rgb(245, 197, 6);
+    text-transform: uppercase;
+    line-height: 0.8;
+    text-align: center;
+    padding-top: 3.9%;
+}
+
+.features-body {
+    margin-left: 10.75%;
+    display: flex;
+    margin-top: 60px;
+}
+
+.features-body-desription {
+    padding-left: 6%;
+    padding-right: 10.75%;
+    position: relative;
+}
+
+.features-body-desription>ul {
+    list-style-image: url(img/point-list.svg);
+    bottom: 0;
+    align-self: flex-end;
+    padding-top: 3%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+.features-body-desription ul li {
+    list-style-image: url(img/point-list.svg);
+    font-size: 1.37rem;
+    font-family: "OpenSans";
+    color: rgb(169, 169, 167);
+    line-height: 1.2;
+    text-align: left;
+    word-wrap: break-word;
+    padding-top: 7%;
+    width: 87.3%;
+}
+
+.features-body-desription ul li span{
+    position: relative;
+    left: 3%;
+}
+
+.features-body-images {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2.6%;
+    padding-right: 2%;
+    position: relative;
+    width: 54.8%;
+    height: 100%;
+}
+
+.features-body-images div {
+    align-self: flex-end;
+    width: fit-content;
+}
+
+.features-shape-circle {
+    position: absolute;
+    text-align: center;
+    top: -16%;
+    left: 0;
+}
+
+.features-shape-circle>div {
+    font-size: 110%;
+    font-family: "PT Sans Narrow";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 75%;
+    width: 100%;
+    height: 100%;
+} 
+
+#image-tablet,
+#image-phone {
+    padding-bottom: 7%;
+}
+
+.features-body-images div>img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #4c4c4c;
+    width: 100%;
+    height: 5vw;
+    box-shadow: 0 0 19px rgba(0,0,0,10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 1.8rem;
+    font-family: "Lucida Sans";
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.42);
+}
+
+.logo-image-bottom {
+    width: 53px;
+    height: 53px;
+}
+
+.logo-image-bottom>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (max-width: 768px) {
+    .header {
+        background: none;
+        height: 60.8vw;
+    }
+
+    .slogan,
+    .logo-subtitle,
+    nav::before,
+    nav::after {
+        display: none;
+    }
+
+    .logo {
+        background: url(img/logo_background_small.png) no-repeat;
+        background-size: 100%;
+        width: 29%;
+        height: 16%;
+        margin: 0;
+    }
+
+    .logo-image {
+        margin-left: 7%;
+        margin-top: 6.5%;
+        width: 21.6%;
+        height: 72%;
+    }
+
+    .logo-title {
+        margin-left: 4.3%;
+        margin-top: 14%;
+        font-size: 1rem;
+    }
+    nav {
+        margin: 0;
+        width: 71%;
+        height: 16%;
+    }
+
+    .top-nav__button--about-us {
+        width: 38.1%;
+        height: 100%;
+    }
+
+    .top-nav__button--services {
+        width: 29.3%;
+        height: 100%;
+    }
+
+    .top-nav__button--contact {
+        width: 32.6%;
+        height: 100%;
+        border-right: none;
+    }
+
+    .player {
+        display: block;
+        width: 100%;
+        height: 84%;
+    }
+
+    .player>img {
+        width: 100%;
+    }
+    
+    .advantages {
+        display: flex;
+        height: 26.55vw;
+        box-shadow: none;
+        position: relative;
+    }
+
+    .advantages,
+    .advantages::before,
+    .advantages::after {
+        background-color: #f6f6f6;
+    }
+
+    .advantages::before,
+    .advantages::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+    }
+
+    .advantages::before {
+        top: -4px;
+        opacity: 25%;
+        height: 27.85vw;
+    }
+
+    .advantages::after {
+        top: -9px;
+        opacity: 15%;
+        height: 29.35vw;
+    }
+
+    .advantage {
+        margin-bottom: 4.68%
+    }
+
+    .advantage>div:first-child {
+        padding-left: 28.57%;
+        width: 42.85%;
+        height: 42.35%;
+    }
+
+    .advantage>div>img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .advantage-description {
+        font-size: 1rem;
+    }
+
+    .stories {
+        background: white;
+        height: 74.6vw;
+    }
+
+    .stories-header {
+        display: none;
+    }
+
+    .stories-container {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-areas:
+            ". story1 . story2 ."
+            ". . . . ."
+            "story3 story3 story3 story3 story3";
+        grid-template-rows: 48.96% 2.08% 48.96%;
+        grid-template-columns: 1.5% 47.75% 1.5% 47.75% 1.5%;
+        padding: 0;
+    }
+
+    .stories-container>* {
+        width: 100%;
+    }
+
+    .story-body {
+        font-size: 1.9rem;
+        line-height: 1.15;
+    }  
+
+    #story1 {
+        grid-area: story1;
+        width: 100%;
+        height: 100%;
+    }
+
+    #story2 {
+        grid-area: story2;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: none;
+    }
+
+    #story2>img {
+        position: absolute;
+        left: -13.5%;
+        height: 100%;
+    }
+
+    #story3 {
+        grid-area: story3;
+        background-color: #f5c507;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #story3>.story-number,
+    #story3>.story-footer {
+        display: none;
+    }
+
+    .features {
+        height: 102%;;
+    }
+
+    .features-header {
+        font-size: 2.65rem;
+        padding-top: 6.875%
+    }
+
+    .features-body {
+        margin-top: 13.28%;
+        margin-left: 4.2%;
+    }
+
+    .features-body-images {
+        padding-bottom: 9.6%;
+        width: 100%;
+    }
+
+    .features-body-desription {
+        display: none;
+    }
+
+    .footer {
+        height: 6.72vw;
+    }
+
+    .logo-image-bottom {
+        width: 4.85vw;
+        height: 4.85vw;
+    }
+    
+    .logo-image-bottom>img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .footer-text {
+        font-size: 0.75rem;
+        padding-left: 1.71%;
+    }
+}
+
+
+@media (min-width: 769px)
+    and (max-width: 1080px) {
+    
+    .slogan,
+    .logo-subtitle
+    {
+        display: none;
+    }
+
+    nav {
+        margin-top: 4.5%;
+    }
+
+    nav,
+    nav::before,
+    nav::after {
+        height: 30px;
+    }
+
+    nav a>div {
+        font-size: 0.8rem;
+    }
+    
+    .features {
+        height: 160%;
+    }
+
+    .features-body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .advantages {
+        height: 35%;
+    }
+
+    .logo-image-bottom {
+        width: 4%;
+        height: auto;
+    }
+
+    .stories {
+        height: 130%;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .features-body-images {
+        justify-content: flex-end;
+    }
+
+    #image-tablet,
+    #image-phone
+    {
+        padding-bottom: 4.5%;
+    }
+    
+    #image-tablet,
+    #image-phone,
+    #image-pc {
+        padding-right: 15px;
+    }
+
+    .features-body {
+        margin-left: 0;
+    }
+
+    .features-shape-circle {
+        left: auto;
+    }
+}
