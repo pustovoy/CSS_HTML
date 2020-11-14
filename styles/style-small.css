@@ -1,0 +1,56 @@
+@media (min-width: 769px)
+    and (max-width: 1100px) {
+
+    .wrapper {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .slogan {
+        display: none;
+    }
+
+    .logo {
+        margin-top: 1rem;
+    }
+
+    .logo-image {
+        width: 60px;
+        height: fit-content;
+    }
+    
+    .logo-title {
+        font-size: 1.7rem;
+        margin-top: 1.5rem;
+        height: fit-content;
+    }
+
+    .top-nav {
+        margin-top: 2rem;
+    }
+
+    .advantages {
+        height: fit-content;
+        padding-top: 2rem;
+    }
+
+    .features {
+        height: 160%;
+    }
+
+    .features-body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .logo-image-bottom {
+        width: 4%;
+        height: auto;
+    }
+
+    .stories {
+        height: 130%;
+    }
+}
